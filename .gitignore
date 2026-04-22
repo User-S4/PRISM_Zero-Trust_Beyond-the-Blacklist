@@ -1,0 +1,9 @@
+/.venv
+/venv
+
+/Dataset/generate-emails_gemini_[AK-API-INCL].py
+
+/Dataset/legitimate_sample*.eml
+/Dataset/phishing_sample*.eml
+/Main/__pycache__
+/Train-Model

@@ -1,0 +1,148 @@
+Delivered-To: arunsethu2007@gmail.com
+Received: by 2002:a05:6a21:6916:b0:394:6701:5ccb with SMTP id ww22csp1313991pzb;
+        Sun, 19 Apr 2026 11:24:41 -0700 (PDT)
+X-Received: by 2002:a05:6102:ccc:b0:613:6b44:3fad with SMTP id ada2fe7eead31-616f783ddf9mr4736152137.25.1776623081663;
+        Sun, 19 Apr 2026 11:24:41 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1776623081; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=A++GZ4w2C4i3SPXqf23z2dPG+6WBLDSOFAyLRO5blOTM8ZpwePAL3Jv3O7k8FHrDNJ
+         sFsXt+BvhCkzhMPQANv3zzrvZMx5d7WHYaxobWbwVi6Qoco2dY3UOIyrTeXS2vbAuCS9
+         OYWbHOWHz2uOtKoYwEVv5RT5+wRKrIrZfHpy1+iC82ZCMZ7T+S7g/Sb45uzD+oA+fW+p
+         1jdkW+M3TDsy497cqhID6IhTCDIGJK3jNxtB8BAIm+D4liJ2c3knv3o/8IrdC45ee0HF
+         9SRTvaMC2/XAbfNWLz0/HgVzg7jaunvHxuBk8aeNl/zsWKvYWypdYwRcPU3S35iuci+v
+         W3oA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=hWOeCbTEqj7yXaO3FtJkfMb7zKCO6dP+bvU6QJCqON4=;
+        fh=/8emwjPBuwv9oQPT5cDm6ZjzD4dSVzrsF0END/KDY00=;
+        b=E4FTKppDWv6cr4NqgIVrCP/EOgZFW4YnRJToPjKUwPEWqEzKMpQ+7uyCPibP+KG7WF
+         xjf36061l0bKvuiBWCzv+SKk0Lf0XSBuV+warJMWhRV6iFuR5wT+5flhWMi7sVJhkusa
+         uiYdUgzH8DDLoZui/2BaIu9f8X0yIBfMJy8jtL73CV2gpIYHdLg6W//C1pRrNadQo4xe
+         1bXhUEb6/MfpLS1vFXd92ohUJ/9iuWlD3FXBhfJjBVLTmkDFVnYB74gicdwuxDK4PtOM
+         5yGg9jElDC3b8HJZpV2SQtnXTYuOJeAr0A+w1MiSmnSCyn1fD18GpMzwMNYvRBGMg7UG
+         HSQg==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=sxJOMh1K;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of kanchanpoonacha3@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kanchanpoonacha3@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <kanchanpoonacha3@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id ada2fe7eead31-617456b4bf4sor2457075137.1.2026.04.19.11.24.41
+        for <arunsethu2007@gmail.com>
+        (Google Transport Security);
+        Sun, 19 Apr 2026 11:24:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kanchanpoonacha3@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=sxJOMh1K;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of kanchanpoonacha3@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kanchanpoonacha3@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+ARC-Seal: i=1; a=rsa-sha256; t=1776623081; cv=none;
+        d=google.com; s=arc-20240605;
+        b=XXDDljuZTllR1jZfTymLH8d/SWEVbuQJCobJ36HXI2CM1D6fvNw30LD5AEcDdtP+Va
+         nTY+UWPFJJc4TLZvFejBIx4Yv/Yrb2opR2hvFHNO4kpHx6gbVcobchOFNAooQE4DtVEP
+         0OCjKYtoaDfKs5fohDL4FXFpIfTRL6rkU9jhxw+3TEk11v1NFRn/Tu7GCkfgdD5tiS/I
+         ibr1aLe89wyFXjCJvHfQbAFsLri1nkHkvXwTb1Sfc5EKHGmH/h9ihhqXscqiCeo309py
+         gqIKICscWUaaTnv6mk81lnMGXEPNpg9eQVj+7wuf9ERCpXVJif0BqzT57BO05AtnLYuN
+         t/vA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=hWOeCbTEqj7yXaO3FtJkfMb7zKCO6dP+bvU6QJCqON4=;
+        fh=/8emwjPBuwv9oQPT5cDm6ZjzD4dSVzrsF0END/KDY00=;
+        b=LqUbmesbJXskRblYbleDjnVVvPRwEcLYzhtOE/g55lddlpOPinGEjobCUJVl+Hc48k
+         Jqio8rbajD6i6fkTh96wCowhGOd5fFyF3eub75nNIenaKC919Vm8PEyMUH47XrfrhYEU
+         yK6Gj6CyOfmglVTlUTVvoSJHXKLzhn3iYL9M7+J7V3J+l2WhFTK34vNde7p3uBJw8sLw
+         HCd1T6FHJy8ui4wO3YOqeLeznjpTIiMfg2g801YiIvr/H8lnKuxSTv9pz99TtBoNyWcG
+         Q9cvtEikO/7JPffNJUKr2DLfvJoGr7pUnP8RR1OixZbvIBAZjhk9TD1ILPEzgHQBOu84
+         ZVyQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1776623081; x=1777227881; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=hWOeCbTEqj7yXaO3FtJkfMb7zKCO6dP+bvU6QJCqON4=;
+        b=sxJOMh1KeTcfvdCl8de4o5k9axgARKcHKtJJiJ2oJCstauIQI8blv/FEMupdSd3WM1
+         Npt1JBIVGm/WvlUtb1hOFY/4FW14lD/3rG+ipTkoSvl7SJEVyxQdW7aevbP+OMVYhu/x
+         JuoyZhTtTZcPzdwG+H+FEsCiW5IGOiJd/09mzSPThZd/j+MsihgapHCbC/eGpk39Kpl6
+         RvtmVlXb39ovfXojkXDQ0z2/NAbGNXwJ8Q5mTj7udpFflwehBbx4Nol7aSzUjUQU/Ocd
+         bkmWt7TW3r9aydTsSaZZcdyAcih5OLgN+dlzdATlclvY7V1r4MMDwlAPqF0ByfzCX7s5
+         fBlw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1776623081; x=1777227881;
+        h=to:subject:message-id:date:from:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=hWOeCbTEqj7yXaO3FtJkfMb7zKCO6dP+bvU6QJCqON4=;
+        b=TYac+PgkqxneFbT6QBeVtA11DyRQTTLzihJGUCUJuIm840c/cgQo/GDsfbcyDvER53
+         VB7EWQ2AmftGixIxMqJLGg9MWZ3SVHWoUHqz9VEddNft+EEdT9vmZxQER5rCbEfQyNBj
+         VfjYD1VW+HLIr8l593/PqEbjmAgi37RzagZ6NF4M0A3QupMwIu/Ha1/FIf4IxyQeeDjv
+         G8Ag+E/4SqtLuRtLMUi/BmxJ/bk/m4DxjaIOe9nP7zDJ17gioQhp74/YIj8kzl85KKTO
+         7ZGoWfTXZGiW5/Epc5TkdlrcGySMdhfg5jtNYb5QGY1i5p50TVkGGJsshPAcii/gLapJ
+         muFg==
+X-Gm-Message-State: AOJu0YwYC5ZAXorfsSoauMdFHS7d1H6Z94iWGODMtdGU3rO3ovZVlPBv
+	6pG+lc75yVoWIuUyYD2KunfFPN7oAIx10rLsKsya6in35D8h5CyrwepBY0VFwXO7rqMUN93nIE+
+	DYxIiAwks3+jyvYIxQXFIBAaSzRDipKvpxvxB
+X-Gm-Gg: AeBDiesMvOSksQlAFGQ+j9hv7c1kirnSlc3VwhIOJJQaToF34ChfIuAuqA3RTTzRU2E
+	tfLbfeCdAGMrsdJFE4gmeYqJUS9D0iQqumA3qVZ+hxMmOmfehSUm1pfDa2+w3Ng6SFH5RvLoH6d
+	f3MLruGLlVMWciLxDPARnCYGLhozEjBWINkm8d0aXDNukHwkWUj7rosY3GiDDuItV0AXkcHebS2
+	9FTO9DyxY+wTYkZ1iFZDkrYUGsQeNYmFAGCuxvS8u/S4ALIKvdmNxNuTYRX0F1G0Q7ZNn5ZC1M0
+	s7A+vZ2+qyuwJSLcWjmMOHs2jGr33CuNtXcyiTAq7C9aoSxpNkQRMRKYfiKUYi0Yvux3OO+YiOz
+	W6r0inZA=
+X-Received: by 2002:a05:6102:41a3:b0:5ff:f4ae:a154 with SMTP id
+ ada2fe7eead31-616f4b50380mr4490559137.1.1776623080764; Sun, 19 Apr 2026
+ 11:24:40 -0700 (PDT)
+MIME-Version: 1.0
+From: Kanchan Poonacha <kanchanpoonacha3@gmail.com>
+Date: Sun, 19 Apr 2026 22:24:26 +0400
+X-Gm-Features: AQROBzAvkiGOiAolP9IN402ICqFWWSmGDjql_lnWo9y13Gfrg_Ius7Q26bLz1ms
+Message-ID: <CAJe61c-b_A1qV+=YKJejkW5BSN3TjiA9AL_s1xiO7-RmQH2iSg@mail.gmail.com>
+Subject: Action Required: Confirm Credentials to Secure Accounts
+To: "Arun Kumar S." <arunsethu2007@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000a0f725064fd44bf5"
+
+--000000000000a0f725064fd44bf5
+Content-Type: text/plain; charset="UTF-8"
+
+Attention Team,
+
+This is an important security notice regarding your accounts. We have
+detected unusual activity linked to your login credentials in our system.
+To ensure the integrity of your data and prevent unauthorized access, we
+require you to verify your account immediately.
+
+Please follow the link below to confirm your credentials and secure your
+account. This verification is mandatory and must be completed within the
+next 24 hours to avoid any disruptions to your access.
+
+https://hr-portal.benefits-management-system.com/auth
+
+It is crucial that you take this action promptly. If you have any questions
+or require assistance, feel free to reach out.
+
+Best,
+Sarah Jenkins
+IT Security Team
+Vanguard Health
+
+--000000000000a0f725064fd44bf5
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Attention Team,<br><br>This is an important security notic=
+e regarding your accounts. We have detected unusual activity linked to your=
+ login credentials in our system. To ensure the integrity of your data and =
+prevent unauthorized access, we require you to verify your account immediat=
+ely.<br><br>Please follow the link below to confirm your credentials and se=
+cure your account. This verification is mandatory and must be completed wit=
+hin the next 24 hours to avoid any disruptions to your access.<br><br><a hr=
+ef=3D"https://hr-portal.benefits-management-system.com/auth">https://hr-por=
+tal.benefits-management-system.com/auth</a><br><br>It is crucial that you t=
+ake this action promptly. If you have any questions or require assistance, =
+feel free to reach out.<br><br>Best, =C2=A0<br>Sarah Jenkins =C2=A0<br>IT S=
+ecurity Team =C2=A0<br>Vanguard Health</div>
+
+--000000000000a0f725064fd44bf5--
